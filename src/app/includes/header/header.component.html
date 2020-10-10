@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: '#ceedf0'">
+	<div class="container">
+		<a href="#" class="navbar-brand">Observable and Promises</a>
+		<button class="navbar-toggler" (click)="onNavToggle()" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" [class.show]="navOpen" id="navbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a routerLink="promise" class="nav-link">Promise</a>
+				</li>
+				<li class="nav-item">
+					<a routerLink="observable" class="nav-link">Observable</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
