@@ -12,10 +12,12 @@ import { FromEventComponent } from './observable/from-event/from-event.component
 import { ListComponent } from './observable/list/list.component';
 import { DesignUtilityService } from './appServices/design-utility.service';
 import { IntervalComponent } from './observable/interval/interval.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent, ObservableComponent, FromEventComponent, ListComponent, IntervalComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent, ObservableComponent, FromEventComponent, ListComponent, IntervalComponent, OfFromComponent, ToArrayComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DesignUtilityService]
 })
