@@ -7,10 +7,19 @@ import { HelloComponent } from './hello.component';
 import { HeaderComponent } from './includes/header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { ObservableComponent } from './observable/observable.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { ListComponent } from './observable/list/list.component';
+import { DesignUtilityService } from './appServices/design-utility.service';
+import { IntervalComponent } from './observable/interval/interval.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
+import { CustomComponent } from './observable/custom/custom.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent, ObservableComponent, FromEventComponent, ListComponent, IntervalComponent, OfFromComponent, ToArrayComponent, CustomComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [DesignUtilityService]
 })
 export class AppModule { }
