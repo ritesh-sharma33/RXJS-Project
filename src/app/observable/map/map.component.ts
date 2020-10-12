@@ -39,7 +39,7 @@ export class MapComponent implements OnInit {
 
     // Ex - 02
 
-    broadcastVideos.pipe(
+    this.sub2 = broadcastVideos.pipe(
       map(data => data * 3)
     ).subscribe(res => {
       this.msg2 = res;
