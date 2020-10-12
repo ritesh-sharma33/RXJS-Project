@@ -15,10 +15,11 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomComponent } from './observable/custom/custom.component';
+import { MapComponent } from './observable/map/map.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent, ObservableComponent, FromEventComponent, ListComponent, IntervalComponent, OfFromComponent, ToArrayComponent, CustomComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, PromiseComponent, ObservableComponent, FromEventComponent, ListComponent, IntervalComponent, OfFromComponent, ToArrayComponent, CustomComponent, MapComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DesignUtilityService]
 })
